@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  sourcemap:
+    build: .
+    env_file:
+      - ./.env
+    ports:
+      - ${PORT}:${PORT}
